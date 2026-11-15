@@ -1,0 +1,152 @@
+[
+  {
+    "path": "cais/scripts/scenario_framework.py",
+    "source_archive": "CAIS revision",
+    "source_sha256": "401fd065b0fb406d935eb3a177470955df4ffb73810d37d5d3737f49186b3afe"
+  },
+  {
+    "path": "cais/scripts/run_dqn_revision.py",
+    "source_archive": "CAIS revision",
+    "source_sha256": "b07dd24cb01c8cdfb41fe61a3f436385ec716249af41e12ab08d77e8c2ead381"
+  },
+  {
+    "path": "cais/scripts/run_bcnn_lstm_revision.py",
+    "source_archive": "CAIS revision",
+    "source_sha256": "c678c082ba5833e20389df7474a4cae4159ced618990963123afd3f88d0d79f6"
+  },
+  {
+    "path": "cais/tables/dec_public_proxy_by_archetype.csv",
+    "source_archive": "CAIS revision",
+    "source_sha256": "a4031d7c30f4ab70cfc7fa1b496d52d3d32fda04e8b4e33cf174b3c005eedfb9"
+  },
+  {
+    "path": "cais/tables/fahp_top_level_weights_and_consistency.csv",
+    "source_archive": "CAIS revision",
+    "source_sha256": "9bfd47046d74765c8fb081c513129458003c68a3bf4261138bf5b0cbc24c24f7"
+  },
+  {
+    "path": "cais/tables/psds_intervention_action_catalogue_filtered.csv",
+    "source_archive": "CAIS revision",
+    "source_sha256": "a4866e3e18756f418873403b70cb2a61992c5e26a2fb8a5c4fdb80a07765f6e4"
+  },
+  {
+    "path": "reference/cais/dqn_revision_config.csv",
+    "source_archive": "CAIS revision",
+    "source_sha256": "380b155ac57e34315394d444a7d2097ba86c3bba702602d5714700611298ac1f"
+  },
+  {
+    "path": "reference/cais/dqn_selected_sequences.csv",
+    "source_archive": "CAIS revision",
+    "source_sha256": "4a42db30ba329b870dec2aac0568c37aa10e4a9754f4a9672e09e14d1a5667d8"
+  },
+  {
+    "path": "reference/cais/bcnn_lstm_revision_metrics.csv",
+    "source_archive": "CAIS revision",
+    "source_sha256": "de30ece0ae299c1e213732a538a12c74afe78294eedad9714a64cd6238b929fd"
+  },
+  {
+    "path": "enb/src/model.py",
+    "source_archive": "ENB direct transition archive",
+    "source_sha256": "af19b17ccfaa6e73584dc6e702e700435a34d473d30c9ebb8a91752af1844d37"
+  },
+  {
+    "path": "enb/src/transition_kernel.py",
+    "source_archive": "ENB direct transition archive",
+    "source_sha256": "1da3e3b00f657eb73c5d9a57c33328a11754e38102646d20728744593b43d8c6"
+  },
+  {
+    "path": "enb/src/exact_optimisation.py",
+    "source_archive": "ENB direct transition archive",
+    "source_sha256": "178dddc7bae752653804c1a5daea50ed970763492b1541491f3a39cb423d6173"
+  },
+  {
+    "path": "enb/src/common.py",
+    "source_archive": "ENB direct transition archive",
+    "source_sha256": "c73b86f00fb51caf28f3e9621d5a7605af4ae3c06e13fc58e7f8b747ae0197bc"
+  },
+  {
+    "path": "enb/config/accepted_assumptions.yaml",
+    "source_archive": "ENB direct transition archive",
+    "source_sha256": "887c56a580e89468dd6c270f67bba0a2cf173b38deb49cf414eec7339dbe38b9"
+  },
+  {
+    "path": "enb/data/prototype_energy_baselines.csv",
+    "source_archive": "ENB direct transition archive",
+    "source_sha256": "792dc558e562f1acc313d198550ffded52c194807e321523aac4729f15e06ca7"
+  },
+  {
+    "path": "enb/data/electricity_carbon_factor_series.csv",
+    "source_archive": "ENB direct transition archive",
+    "source_sha256": "3b247677c7f1b8d9369dfad67e1a005ee58ff353c67d9dbaacbea8343327c61b"
+  },
+  {
+    "path": "enb/data/external_parameter_provenance.csv",
+    "source_archive": "ENB direct transition archive",
+    "source_sha256": "c936f6b0c634c2462af936fdb1e02958f8948aa34f7f910ad13fcc2cd15a93e2"
+  },
+  {
+    "path": "llm/prompts/closed_loop_optimizer_v1.txt",
+    "source_archive": "ENB direct transition archive",
+    "source_sha256": "4ffcbc9b2beda5e6948ed13c847bda6a7d2c92139970ec4034fa6f6067318f9f"
+  },
+  {
+    "path": "llm/prompts/evaluator_v1.txt",
+    "source_archive": "ENB direct transition archive",
+    "source_sha256": "a316d40cccd3cfb26ba9e3e7c3aed58cdce88bf3652f843de3c33587cef40c00"
+  },
+  {
+    "path": "llm/prompts/extraction_v1.txt",
+    "source_archive": "ENB direct transition archive",
+    "source_sha256": "cc9cfedb50ac3636ded9cfb145e914bfe26e2e83a8ebf7eed234c17afac6989e"
+  },
+  {
+    "path": "llm/prompts/generic_narrative_v1.txt",
+    "source_archive": "ENB direct transition archive",
+    "source_sha256": "b2aeeae30a64da9ad5d0b1c9df3844a332bf5fd097eda6a3c8607f502494fac8"
+  },
+  {
+    "path": "llm/prompts/generic_parameter_v1.txt",
+    "source_archive": "ENB direct transition archive",
+    "source_sha256": "94f9821a6f5138168dc1d7c4d4c44d5629fb93a70e9b16eb9137aaf3a2718fa0"
+  },
+  {
+    "path": "llm/prompts/narrative_v1.txt",
+    "source_archive": "ENB direct transition archive",
+    "source_sha256": "ef2a941be027a2cf2f579809c48424a002244b8fc683217989b591919827a221"
+  },
+  {
+    "path": "llm/prompts/system_v1.txt",
+    "source_archive": "ENB direct transition archive",
+    "source_sha256": "6e27e4382e807d19402b0000c7bff7e2c638f629d1c8dad24d293cc8d4e357df"
+  },
+  {
+    "path": "llm/llm_sol.yaml",
+    "source_archive": "ENB direct transition archive",
+    "source_sha256": "c4f0c40b7bf26312dea230c7e2dbf28f526e20ed34d4cfdacea8e1d5b2467a56"
+  },
+  {
+    "path": "llm/parameter_output.schema.json",
+    "source_archive": "ENB direct transition archive",
+    "source_sha256": "499ccc4ce4897588e1d33eedd427aa16a6e6135d1c9595ae3decddb96a192f22"
+  },
+  {
+    "path": "llm/narrative_output.schema.json",
+    "source_archive": "ENB direct transition archive",
+    "source_sha256": "21752909e1d6cb1c7ac8eb603aad1fe815333ed1d243387cdbb9c982551802e3"
+  },
+  {
+    "path": "llm/evaluator_output.schema.json",
+    "source_archive": "ENB direct transition archive",
+    "source_sha256": "29b68cc1ba2a5d5fa69a8a775ebe6438e072edcfe368d276b9c8c16572853e25"
+  },
+  {
+    "path": "llm/human_review_aggregate.csv",
+    "source_archive": "ENB direct transition archive",
+    "source_sha256": "9ed5ac5e55d4ffcbf996e5df3d1c5d9288149a76128fbe32bc51ffabf749d0a8"
+  },
+  {
+    "path": "llm/automated_evaluation_aggregate.csv",
+    "source_archive": "ENB direct transition archive",
+    "source_sha256": "d189b1408bcfe5d1ea267b28ed002a6a7e4456bdf5bceb6e56d3c5662dd1c501"
+  }
+]

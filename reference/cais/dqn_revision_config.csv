@@ -1,0 +1,14 @@
+configuration_item,value
+Action-space size,38 (37 intervention actions plus stop)
+State variables,Archetype; remaining budget; step; cumulative NPV/carbon/ESG indices; selected-family flags
+Budget envelopes,Low 1.20; Medium 2.00; High 3.00 normalised spend-burden units
+Hard feasibility mask,Budget; repeat action/family; competing heating source; five-action terminal horizon
+Penalty allocation,Feasible disruption burden only
+lambda_viol,0.15
+Replay-buffer size,4096
+Target-network update frequency,100 transitions
+Exploration schedule,epsilon 1.00 to 0.05 over 1200 episodes
+Discount factor gamma,0.95
+Training episodes,1600
+Mini-batch size,64
+Random seed,1702

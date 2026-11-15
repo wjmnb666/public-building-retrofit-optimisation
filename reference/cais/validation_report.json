@@ -1,0 +1,24 @@
+{
+  "bcnn_lstm_revision_metrics.csv": {
+    "rows": 3,
+    "same_shape": true,
+    "rmse": 0.0,
+    "mae": 0.0,
+    "mape_pct": 0.0,
+    "coverage_50": 0.0,
+    "coverage_90": 0.0,
+    "mean_interval_width_50": 0.0,
+    "mean_interval_width_90": 0.0
+  },
+  "dqn_selected_sequences.csv": {
+    "rows": 24,
+    "same_shape": true,
+    "budget_units": 0.0,
+    "used_budget_units": 0.0,
+    "policy_reward": 0.0,
+    "raw_npv": 0.0,
+    "raw_carbon": 0.0,
+    "raw_esg": 0.0,
+    "spend_units": 0.0
+  }
+}

@@ -1,0 +1,102 @@
+project:
+  appraisal_start_year: 2026
+  horizon_years: 30
+  real_discount_rate: 0.035
+  physical_carbon_discounted: false
+  result_status_language: prospective_reimplementation
+
+energy_prices_gbp_per_kwh:
+  central:
+    electricity: 0.2414162719917557
+    gas: 0.05166504599966359
+  multipliers:
+    low: 0.8
+    central: 1.0
+    high: 1.2
+  source: DESNZ_QEP_3_4_2_2026_Q1_including_CCL
+
+carbon:
+  natural_gas_kgco2e_per_kwh_gross_cv: 0.18231
+  electricity_wlc_series: grid_average_commercial_public
+  electricity_appraisal_sensitivity: long_run_marginal_commercial_public
+  physical_carbon_discounted: false
+
+packages:
+  PK1:
+    target_level: 1
+    total_capex_gbp_m2: 20
+    electricity_saving_fraction: 0.10
+    gas_saving_fraction: 0.00
+    embodied_kgco2e_m2: {low: 15, central: 25, high: 40}
+    effective_service_life_years: 15
+  PK2:
+    target_level: 2
+    total_capex_gbp_m2: 150
+    electricity_saving_fraction: 0.10
+    gas_saving_fraction: 0.25
+    embodied_kgco2e_m2: {low: 40, central: 70, high: 100}
+    effective_service_life_years: 30
+  PK3:
+    target_level: 3
+    total_capex_gbp_m2: 300
+    electricity_saving_fraction: 0.25
+    gas_saving_fraction: 0.45
+    embodied_kgco2e_m2: {low: 80, central: 110, high: 140}
+    effective_service_life_years: 25
+
+package_rules:
+  cumulative_target_levels: true
+  incremental_cost_and_carbon_between_levels: true
+  incremental_layers_have_independent_ages_and_service_lives: true
+  later_upgrades_do_not_reset_earlier_layers: true
+  maintenance_central_fraction_of_initial_capex_per_year: 0.0
+  maintenance_sensitivity: [0.0, 0.01, 0.02]
+  service_life_sensitivity_years: [-5, 0, 5]
+  replacement_real_cost_rule: equal_to_incremental_initial_capex
+  replacement_carbon_rule: equal_to_incremental_installed_embodied_carbon
+  replacement_timing: after_current_year_service_and_only_when_a_subsequent_operational_year_remains
+  residual_value_rule: straight_line_remaining_service_life
+
+wlc_boundary:
+  included: [A1-A5_or_B5_planning_envelope, B4_replacement, B6_operational_energy]
+  excluded_from_total: [C1-C4, D]
+  terminology: planning_level_WLC
+  rics_full_compliance_claim: false
+
+annual_budget:
+  ratios_of_PK3_total_capex: [0.15, 0.25, 0.40]
+  unused_budget_accumulates: true
+  observed_manchester_budget_claim: false
+
+replacement_cycle:
+  natural_windows_years: [5, 10, 15]
+  stranded_value_rule: straight_line_remaining_life_fraction
+  stranded_value_coefficients:
+    low: 0.25
+    central: 0.50
+    high: 0.75
+  coefficient_status: stylised_sensitivity_not_observed_manchester_evidence
+  year_zero_exempt: false
+
+replacement_embodied_carbon:
+  constant_rule: installed_incremental_layer_embodied_carbon
+  declining_rule: linear_from_installed_incremental_case_to_registered_incremental_low_envelope_over_horizon
+  declining_rule_status: stylised_planning_sensitivity_not_observed_manchester_evidence
+
+uncertainty:
+  draws: 1000
+  capex_multiplier_triangular: [0.7, 1.0, 1.3]
+  savings_multiplier_triangular: [0.8, 1.0, 1.2]
+  energy_price_multiplier_triangular: [0.8, 1.0, 1.2]
+  embodied_case_triangular: [low, central, high]
+
+llm:
+  model: gpt-5.6-sol
+  conditions: [generic_single_pass, source_locked_single_pass, closed_loop_validated]
+  confirmatory_base_repetitions_per_task_condition: 1
+  structural_stability_panel_task_count: 12
+  structural_stability_panel_repetitions_per_condition: 5
+  additional_repetitions_status: exploratory_not_confirmatory
+  max_attempts: 3
+  human_raters: 1
+  inter_rater_agreement: not_calculated

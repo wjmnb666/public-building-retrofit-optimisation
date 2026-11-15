@@ -1,0 +1,29 @@
+model: gpt-5.6-sol
+reasoning:
+  mode: role_scoped
+  parameter_generator_effort: low
+  narrative_generator_effort: medium
+  evaluator_effort: medium
+  context: minimal_child_workspace
+verbosity: low
+max_attempts: 3
+runs_per_task_condition: hybrid_1_plus_locked_panel_5
+registered_full_runs: 612
+hybrid_design_registry: config/agent2_hybrid_design.yaml
+conditions:
+  - generic_single_pass
+  - source_locked_single_pass
+  - closed_loop_validated
+human_validation:
+  raters: 1
+  require_all_parameter_tasks_reviewed: true
+  require_all_narrative_tasks_reviewed: true
+  inter_rater_metrics: false
+  limitation_required: true
+logging:
+  save_raw_responses: true
+  save_failed_responses: true
+  save_validator_feedback: true
+  save_response_model_id: true
+  save_usage: true
+  save_latency: true

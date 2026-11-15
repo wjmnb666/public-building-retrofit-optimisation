@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-16",
+  "candidate_paths": 278256,
+  "preferred_results": 153,
+  "matching_selected_paths": 153,
+  "maximum_cost_difference_gbp": 0,
+  "maximum_carbon_difference_kgco2e": 1.0244548320770264e-08,
+  "ledger_tolerance": 1e-06,
+  "tests_passed": 4,
+  "live_llm_calls": 0,
+  "clean_package_run": "passed"
+}

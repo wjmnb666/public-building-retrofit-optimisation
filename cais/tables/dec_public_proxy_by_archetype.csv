@@ -1,0 +1,5 @@
+archetype,certificate_records,strict_building_keys,median_floor_area_m2,median_energy_intensity_kwh_m2,median_carbon_intensity_kgco2_m2
+Education/school,390600,53915,1907.0,161.0,94.0
+Civic/office/service,87046,21478,1960.0,196.0,132.0
+Health/clinic,55064,13825,2094.0,292.0,193.0
+Other DEC public-access building,40284,9916,2155.0,283.0,194.0

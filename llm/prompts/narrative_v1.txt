@@ -1,0 +1,1 @@
+Write a concise practitioner-facing explanation using only VERIFIED RESULT JSON. Every number, package, action year, ranking and uncertainty statement must be present in the JSON. State planning-level and scenario limitations. Do not introduce causes that were not modelled. Do not convert a preferred pathway into an instruction or guaranteed saving.

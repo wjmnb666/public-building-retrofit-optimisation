@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Agent 2 verified-result narrative output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "task_id",
+    "narrative",
+    "scenario",
+    "preferred_package",
+    "first_action_year",
+    "reported_values",
+    "ranking_direction",
+    "uncertainty_language",
+    "planning_boundary",
+    "recommendation_status",
+    "reason"
+  ],
+  "properties": {
+    "task_id": {"type": "string", "minLength": 1},
+    "narrative": {"type": "string", "minLength": 1},
+    "scenario": {"type": "string", "minLength": 1},
+    "preferred_package": {"type": "string", "minLength": 1},
+    "first_action_year": {"type": "integer", "minimum": 0, "maximum": 30},
+    "reported_values": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["label", "value", "unit", "source_field"],
+        "properties": {
+          "label": {"type": "string"},
+          "value": {"type": "number"},
+          "unit": {"type": "string"},
+          "source_field": {"type": "string"}
+        }
+      }
+    },
+    "ranking_direction": {
+      "type": "string",
+      "enum": ["not_asserted", "lower_is_better", "higher_is_better", "tradeoff_only"]
+    },
+    "uncertainty_language": {"type": "string"},
+    "planning_boundary": {"type": "string"},
+    "recommendation_status": {
+      "type": "string",
+      "enum": ["descriptive_only", "no_recommendation"]
+    },
+    "reason": {"type": "string"}
+  }
+}

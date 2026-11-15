@@ -1,0 +1,7 @@
+condition,task_type,reviewed_items,reviewed_by,accept_count,accept_rate,accept_with_edit_count,accept_with_edit_rate,reject_count,reject_rate,final_output_available_count,final_output_available_rate,raw_accuracy_not_calculated
+closed_loop_validated,narrative,52,single author,50,0.9615384615384616,2,0.038461538461538464,0,0.0,52,1.0,True
+closed_loop_validated,parameter,152,single author,146,0.9605263157894737,6,0.039473684210526314,0,0.0,152,1.0,True
+generic_single_pass,narrative,52,single author,52,1.0,0,0.0,0,0.0,52,1.0,True
+generic_single_pass,parameter,152,single author,0,0.0,100,0.6578947368421053,52,0.34210526315789475,100,0.6578947368421053,True
+source_locked_single_pass,narrative,52,single author,27,0.5192307692307693,25,0.4807692307692308,0,0.0,52,1.0,True
+source_locked_single_pass,parameter,152,single author,0,0.0,107,0.7039473684210527,45,0.29605263157894735,107,0.7039473684210527,True

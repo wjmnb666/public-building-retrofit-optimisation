@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Agent 2 parameter extraction output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "task_id",
+    "parameter_name",
+    "value",
+    "unit",
+    "source_document",
+    "source_location",
+    "source_quote_or_span",
+    "year_or_version",
+    "applicability",
+    "exclusions",
+    "confidence_note",
+    "no_answer",
+    "reason"
+  ],
+  "properties": {
+    "task_id": {"type": "string", "minLength": 1},
+    "parameter_name": {"type": "string", "minLength": 1},
+    "value": {"type": ["string", "number", "null"]},
+    "unit": {"type": ["string", "null"]},
+    "source_document": {"type": ["string", "null"]},
+    "source_location": {"type": ["string", "null"]},
+    "source_quote_or_span": {"type": ["string", "null"]},
+    "year_or_version": {"type": ["string", "number", "integer", "null"]},
+    "applicability": {"type": ["string", "null"]},
+    "exclusions": {"type": ["string", "null"]},
+    "confidence_note": {"type": "string"},
+    "no_answer": {"type": "boolean"},
+    "reason": {"type": "string"}
+  }
+}
