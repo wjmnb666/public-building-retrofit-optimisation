@@ -1,6 +1,6 @@
-# Chapter 4 public retrofit calculations
+# Public Building Retrofit Whole-Life Cost and Carbon Optimisation
 
-Public computational evidence for Ziru Tao's PhD Chapter 4 and the related publications:
+This repository models public-building retrofit choices through whole-life cost, carbon and service criteria. It provides scenario prediction, constrained intervention sequencing, exact pathway comparison and source-linked parameter extraction for the following studies:
 
 - Tao, Z., Baguley, P., Maqbool, R. and Ejohwomu, O. (2026). AI-driven Whole-Life Costing for Decision-Ready UK Public Building Retrofits. *Complex & Intelligent Systems*. https://doi.org/10.1007/s40747-026-02516-9
 - Tao, Z., Baguley, P., Maqbool, R. and Ejohwomu, O. (2026). Balancing cost and carbon: prioritising office retrofit pathways in Manchester. *Energy & Buildings*, 371, 118230. https://doi.org/10.1016/j.enbuild.2026.118230
@@ -9,13 +9,13 @@ This package runs from public-source aggregates and declared scenario parameters
 
 ## Run
 
-Repository: https://github.com/wjmnb666/chapter4-retrofit-reproduction
+Repository: https://github.com/wjmnb666/public-building-retrofit-optimisation
 
-[Open the reproduction notebook in Google Colab](https://colab.research.google.com/github/wjmnb666/chapter4-retrofit-reproduction/blob/main/reproduce.ipynb)
+[Open the reproduction notebook in Google Colab](https://colab.research.google.com/github/wjmnb666/public-building-retrofit-optimisation/blob/main/reproduce.ipynb)
 
 ```bash
-git clone https://github.com/wjmnb666/chapter4-retrofit-reproduction.git
-cd chapter4-retrofit-reproduction
+git clone https://github.com/wjmnb666/public-building-retrofit-optimisation.git
+cd public-building-retrofit-optimisation
 ```
 
 Use Python 3.11 or later in a clean environment.

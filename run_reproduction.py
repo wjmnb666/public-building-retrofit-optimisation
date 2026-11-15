@@ -1,4 +1,4 @@
-"""Run the public aggregate Chapter 4 calculations without private records or API calls."""
+"""Run public-building retrofit calculations from aggregate inputs and declared assumptions."""
 from pathlib import Path
 import argparse,hashlib,json,sys,time
 import numpy as np
